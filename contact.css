@@ -1,0 +1,207 @@
+
+ 
+  .back-vid{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+body{color:white}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+ nav h1{
+    padding:10px;
+    margin:10px;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+}
+h1 span{
+    color:#4acfee;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+  }
+  
+  nav ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+    padding: 0px 25px;
+  }
+  
+  nav a:hover ,.active
+   {
+    color : #4acfee;
+    text-decoration: underline;
+  }
+.contact-text h3{
+    margin:10px 0;
+    color:rgb(228,228,228);
+    font-size:20px;
+    font-weight:600;
+}
+.contact-list {
+    margin-bottom:3rem;
+}
+.contact-list li{
+    margin-bottom:10px;
+    display:block;
+}
+.contact-list li{
+    margin-bottom:10px;
+    display:block;
+
+}
+.contact-list i{
+    display: inline-block;
+    color: #4acfee;
+    font-size:20px;
+    font-weight:600;
+    transition:all .40s ease;
+}
+.contact-list li a:hover{
+    transform:scale(1.01) translateY(-5px);
+    color: #4acfee;
+}
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+   
+    border:2px solid #4acfee;
+    border-radius: 50%;
+    font-size: 20px;
+   color: #4acfee;
+   text-decoration: none;
+   margin: 30px 15px 30px 0;
+   transition: .5s ease;
+   opacity:1;
+   animation: slideLeft is ease forwards;
+   animation-delay: calc(.2s *var(--i));
+
+}
+.contact-icons i:hover{
+    background:#4acfee;
+    color:white;
+    box-shadow: 0 0 20px #4acfee;
+}
+
+.contact-form {
+    background: rgba(74, 207, 238, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(74, 207, 238, 0.3);
+    border: 1px solid rgba(74, 207, 238, 0.2);
+}
+
+.contact-form form input, .contact-form form textarea {
+    border: 1px solid rgba(74, 207, 238, 0.3);
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-form form input::placeholder, .contact-form form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form form input:focus, .contact-form form textarea:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #4acfee;
+    box-shadow: 0 0 10px rgba(74, 207, 238, 0.5);
+}
+
+.contact-form textarea{
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form form .send{
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 12px 35px;
+    background: #4acfee;
+    border-radius: 40px;
+    border: 2px solid #4acfee;
+    font-size: 16px;
+    color: #0e1217;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    width: auto;
+}
+
+.contact-form form .send:hover{
+    background: transparent;
+    color: #4acfee;
+    box-shadow: 0 0 20px #4acfee, inset 0 0 10px #4acfee;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+  nav h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-top: 10px;
+  }
+  nav a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    padding: 20px;
+    gap: 2rem;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .contact-form form input, .contact-form form textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact-icons i {
+    margin: 15px 10px;
+  }
+}
+
